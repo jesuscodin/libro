@@ -1,0 +1,30 @@
+{% load static %}
+
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+            <a href="#" class="logo">
+                <span class="symbol"><img src="{% static "css/images/bkk.png" %}" alt="" /></span><span class="title">Libro</span>
+            </a>
+
+        <!-- Nav -->
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
+
+    </div>
+</header>
+
+				<!-- Menu -->
+                <nav id="menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="{% url 'books:home' %}">Home</a></li>
+                        <li><a href="{% url 'books:browse' %}">Browse</a></li>
+                        <li><a href="{% url 'books:explore' %}">Explore</a></li>
+                        <li><a href="{% url 'books:about' %}">About</a></li>
+                    </ul>
+                </nav>

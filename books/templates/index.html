@@ -1,0 +1,199 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    homepage 
+{% endblock %}
+
+{% block body %}
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            <header>
+                <h1>Welcome from Libro, a free ebook reading site<br /></h1>
+                 <p>Dive into a world of captivating stories and expert insights with our diverse collection of ebooks. From thrilling novels and heartfelt romances to transformative self-help and cutting-edge non-fiction, we have something for every reader. Whether you’re a bookworm or a casual reader, explore our library and find your next page-turner today!
+
+                    <br>Happy Reading!</p>
+            </header>
+            
+            <section class="tiles">
+                <article class="style1">
+                    <span class="image">
+                        <img src="{% static 'css/images/hpbook.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Adventure</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style2">
+                    <span class="image">
+                        <img src="{% static 'css/images/harry.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Fiction</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style3">
+                    <span class="image">
+                        <img src="{% static 'css/images/lotr.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Movie</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style4">
+                    <span class="image">
+                        <img src="{% static 'css/images/wshpe.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Story</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style5">
+                    <span class="image">
+                        <img src="{% static 'css/images/got.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Game</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style6">
+                    <span class="image">
+                        <img src="{% static 'css/images/histori.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>History</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article> 
+
+                <article class="style1">
+                    <span class="image">
+                        <img src="{% static 'css/images/hpbook.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Adventure</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style2">
+                    <span class="image">
+                        <img src="{% static 'css/images/harry.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Fiction</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style3">
+                    <span class="image">
+                        <img src="{% static 'css/images/lotr.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Movie</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style4">
+                    <span class="image">
+                        <img src="{% static 'css/images/wshpe.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Story</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style5">
+                    <span class="image">
+                        <img src="{% static 'css/images/got.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>Game</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style6">
+                    <span class="image">
+                        <img src="{% static 'css/images/histori.jpg' %}" alt="" />
+                    </span>
+                    <a href="{% url 'books:browse' %}">
+                        <h2>History</h2>
+                        <div class="content">
+                            <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        </div>
+                    </a>
+                </article> 
+            </section>
+        </div>
+    </div>
+
+    			<!--footer form-->
+                <footer id="footer">
+                    <div class="inner">
+                        <section>
+                            <h2>Get in touch</h2>
+                            <form method="post" action="{% url 'books:home' %}">
+                                {% csrf_token %}
+                                <div class="fields">
+                                    <div class="field half">
+                                        {{ form.name }}
+                                    </div>
+                                    <div class="field half">
+                                        {{ form.email }}
+                                    </div>
+                                    <div class="field">
+                                        {{ form.message }}
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send" class="primary" />
+                                    </li>
+                                </ul>
+                            </form>
+                        </section>
+                        <section>
+                            <h2>Follow</h2>
+                            <ul class="icons">
+                                <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+                                <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                                <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </footer>
+
+
+{% endblock %}

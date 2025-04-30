@@ -1,0 +1,82 @@
+{% load static %}
+<html>
+	<head>
+		<title>Django Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="#" class="logo">
+									<span class="symbol"><img src="{% static 'css/images/bkk.png' %}" alt="" /></span><span class="title">Libro</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="{% url 'books:home' %}">Home</a></li>
+							<li><a href="{%url 'books:browse' %}">Browse</a></li>
+							<li><a href="{%url 'books:explore' %}">Explore</a></li>
+							<li><a href="{%url 'books:about' %}">About</a></li>
+						</ul>
+					</nav>
+
+                    <!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>About Us</h1>
+							<p>About Us
+
+                                Welcome to LIBRO, your premier destination for discovering and enjoying a vast collection of eBooks across all genres and interests.
+                                <br>At LIBRO, we are passionate about making reading accessible and enjoyable for everyone, whether you're a casual reader or a devoted book lover.<br>
+                                
+                                Our Mission: Our mission is to provide a comprehensive and user-friendly platform where readers can easily find, purchase, and download their favorite eBooks. We aim to support and promote both established authors and emerging talents, offering a diverse range of titles to suit every taste.
+                                <br>
+                                What We Offer: <br>
+                                
+                                Extensive Collection: Explore our extensive library of eBooks, including bestsellers, classics, and indie gems. From fiction and non-fiction to academic texts and self-help guides, we have something for every reader.<br>
+                                Seamless Experience: Enjoy a seamless reading experience with our easy-to-navigate website and downloadable eBooks compatible with various devices.<br>
+                                Personalized Recommendations: Receive personalized recommendations based on your reading preferences and interests.<br>
+                                Our Commitment: At [eBook Site Name], we are committed to providing exceptional customer service and ensuring a safe, secure, and enjoyable reading experience. We value our community of readers and strive to continually enhance our offerings to meet your needs.
+                                <hr>
+                                Thank you for choosing LIBRO Happy reading!</p>
+						</div>
+					</div>
+
+                    <footer>
+						<p class"copyright">&copy; Untitled Design:Codeephile</p>
+					</footer>
+
+        
+    			</div>
+
+                <!-- Scripts -->
+                <script src="{% static 'js/jquery.min.js' %}"></script>
+                <script src="{% static 'js/browser.min.js' %}"></script>
+                <script src="{% static 'js/breakpoints.min.js' %}"></script>
+                <script src="{% static 'js/util.js' %}"></script>
+                <script src="{% static 'js/main.js' %}"></script>
+        
+            </body>
+        </html>
